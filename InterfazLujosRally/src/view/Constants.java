@@ -22,6 +22,16 @@ public class Constants {
 	public static final String TEXT_SELL_UNIT = "Unidades vendidas (*)";
 	public static final String TEXT_SELL_NAME = "Nombre del producto (*)";
 	public static final String TEXT_SELL_total = "Precio total (*)";
+	public static final String TEXT_EDI_INFOR = "Editar información";
+
+	public static final String TEXT_EDI_NAME = "Editar Nombre del producto";
+	public static final String TEXT_EDI_UNIT = "Editar Unidades del producto";
+	public static final String TEXT_EDI_PRICE = "Editar Precio del producto";
+	public static final String TEXT_EDI_TYCAR = "Editar Tipo de carro del producto";
+	public static final String TEXT_EDI_MARC = "Editar Marca del producto";
+	public static final String TEXT_EDI_REF = "Editar Referencia del producto";
+	public static final String TEXT_EDI_DESCR = "Editar Descripción del producto";
+	public static final String TEXT_EDI_CHARAC = "Editar Características adicionales del producto";
 
 	public static final String BUTTON_LOG_USER = "Ingresar";
 	public static final String BUTTON_REGISTER_USER = "Registrarse";
