@@ -42,7 +42,7 @@ public class ClientAdmin implements ActionListener {
 			;
 			break;
 		case Constants.BUTTON_SEL_PRODUCT:
-//			frameMain.addPanelAdmin(this);
+			frameMain.addPanelSells(this);
 			;
 			break;
 		case Constants.BUTTON_SHO_INVENTA:
@@ -51,6 +51,14 @@ public class ClientAdmin implements ActionListener {
 			break;
 		case Constants.BUTTON_SHO_SELLS:
 //			frameMain.addPanelAdmin(this);
+			;
+			break;
+		case Constants.BUTTON_REGISTER_SELL:
+			frameMain.addPanelStart(this);
+			;
+			break;
+		case Constants.BUTTON_RETURN_SELL:
+			frameMain.addPanelStart(this);
 			;
 			break;
 		}

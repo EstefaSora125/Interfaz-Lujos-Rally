@@ -10,16 +10,24 @@ public class Constants {
 
 	public static final String TEXT_WINDOW = "Lujos Rally Yopal";
 	public static final String TEXT_REGISTER = "<html><center>Bienvenido al registro de usuario de <br> Lujos Rally<html>";
+	public static final String TEXT_REGISTER_SELL = "<html><center>Registrar ventas<html>";
 	public static final String TEXT_CONDITION = "<html><justify>Ingrese los datos solicitados,recuerte que el símbolo (*) asterisco <br> corresponde a campos obligatorios.</html>";
 	public static final String TEXT_USER_NAME = "Nombre del usuario (*)";
 	public static final String TEXT_USER_EMAIL = "Correo ";
 	public static final String TEXT_USER_PASSWORD = "Contraseña (*)";
 	public static final String TEXT_USER_CON_PASSWORD = "Confirmar contraseña (*) ";
 	public static final String TEXT_SUCESS = "<html><center>¡Su registro se ha realizado de <br> forma exitosa! </html>";
+	public static final String TEXT_SELL_DATE = "Fecha de venta:    ";
+	public static final String TEXT_SELL_ID = "Identificación del producto";
+	public static final String TEXT_SELL_UNIT = "Unidades vendidas (*)";
+	public static final String TEXT_SELL_NAME = "Nombre del producto (*)";
+	public static final String TEXT_SELL_total = "Precio total (*)";
 
 	public static final String BUTTON_LOG_USER = "Ingresar";
 	public static final String BUTTON_REGISTER_USER = "Registrarse";
 	public static final String BUTTON_REGISTER_USER2 = "Registrar";
+	public static final String BUTTON_REGISTER_SELL = "Registrar Venta";
+	public static final String BUTTON_RETURN_SELL = "Regresar";
 	public static final String BUTTON_RETURN = "Volver";
 
 	public static final String BUTTON_START = "Inicio                              ";
