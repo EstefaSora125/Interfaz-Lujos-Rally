@@ -18,7 +18,7 @@ public class ClientAdmin implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		switch (e.getActionCommand()) {
 		case Constants.BUTTON_LOG_USER:
-			frameMain.addPanelOptions(this);
+			frameMain.addPanelStart(this);
 			;
 			break;
 		case Constants.BUTTON_REGISTER_USER:

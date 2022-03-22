@@ -1,28 +1,24 @@
 package view;
 
-import java.awt.Color;
-import java.awt.FlowLayout;
 import java.awt.event.ActionListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 public class JPLujosRally extends JPanel {
 
 	private static final long serialVersionUID = 1L;
 
-	public JPLujosRally() {
-		setOpaque(false);
-		initComponents();
+	public JPLujosRally(ActionListener listener) {
 		setVisible(true);
+		setOpaque(false);
+		initComponents(listener);
 	}
 
-	private void initComponents() {
-		setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-		setBorder(new EmptyBorder(50, 300, 160, 300));
+	private void initComponents(ActionListener actionListener) {
+		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		add(new JMenuOption(actionListener));
 		add(labelPanel());
 	}
 
@@ -30,7 +26,8 @@ public class JPLujosRally extends JPanel {
 		JPanel panel = new JPanel();
 		panel.setOpaque(false);
 
-		JLabelImage image = new JLabelImage(10, 10, Constants.ICON_CAPT, 100, 100, Constants.COLOR_BLUE_PANEL);
+		panel.setBorder(new EmptyBorder(150, 200, 160, 0));
+		JLabelImage image = new JLabelImage(15, 15, Constants.ICON_CAPT, 600, 400, Constants.COLOR_GRAY_LOG);
 
 		panel.add(image);
 		add(panel);
