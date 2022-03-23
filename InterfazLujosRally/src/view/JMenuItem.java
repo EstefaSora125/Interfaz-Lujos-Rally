@@ -1,7 +1,6 @@
 package view;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.event.ActionListener;
 
 import javax.swing.JMenu;
@@ -25,39 +24,39 @@ public class JMenuItem extends JMenuBar {
 				Constants.ICON_EDIT, 60, 60);
 
 		JMenuType report1 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_NAME, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 
 		report1.setActionCommand(Constants.TEXT_EDI_NAME);
 		report1.addActionListener(listener);
 
 		JMenuType report2 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_UNIT, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 
 		report2.setActionCommand(Constants.TEXT_EDI_UNIT);
 		report2.addActionListener(listener);
 
 		JMenuType report3 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_PRICE, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 		report3.setActionCommand(Constants.TEXT_EDI_PRICE);
 		report3.addActionListener(listener);
 
 		JMenuType report4 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_TYCAR, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 		report4.setActionCommand(Constants.TEXT_EDI_TYCAR);
 		report4.addActionListener(listener);
 
 		JMenuType report5 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_MARC, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 		report5.setActionCommand(Constants.TEXT_EDI_MARC);
 		report5.addActionListener(listener);
 
 		JMenuType report6 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_REF, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 		report6.setActionCommand(Constants.TEXT_EDI_REF);
 		report6.addActionListener(listener);
 
 		JMenuType report7 = new JMenuType(Constants.COLOR_BLUE_PANEL, Constants.TEXT_EDI_DESCR, Constants.FONT_NUNITO,
-				Color.WHITE);
+				Color.BLACK);
 		report6.setActionCommand(Constants.TEXT_EDI_DESCR);
 		report6.addActionListener(listener);
 

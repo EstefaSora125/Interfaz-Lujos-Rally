@@ -36,7 +36,7 @@ public class JFrameMain extends JFrame {
 		getContentPane().removeAll();
 		panel2.setLayout(new BorderLayout());
 		addPanelAdmin(listener);
-//		addPanelSell(listener);
+//		addPanelChangeName(listener);
 		add(panel2);
 
 	}
@@ -81,6 +81,13 @@ public class JFrameMain extends JFrame {
 		panel2.add(panelButton);
 	}
 
+	public void addPanelRegisterProduct(ActionListener actionListener) {
+		panel2.removeAll();
+		JPRegisterProduct registerProduct = new JPRegisterProduct(actionListener);
+		panel2.setBorder(new EmptyBorder(0, 0, 0, 1));
+		panel2.add(registerProduct);
+	}
+
 	public void addPanelSells(ActionListener actionListener) {
 		panel2.removeAll();
 
@@ -91,7 +98,7 @@ public class JFrameMain extends JFrame {
 
 	}
 
-	public void addPanelSell(ActionListener actionListener) {
+	public void addPanelMenuBar(ActionListener actionListener) {
 		panel2.removeAll();
 
 		JMenuItem panelButton = new JMenuItem(actionListener);
@@ -100,6 +107,18 @@ public class JFrameMain extends JFrame {
 		panel2.add(panelButton);
 
 	}
+
+//	public void addPanelChangeName(ActionListener actionListener) {
+//		panel2.removeAll();
+//
+//		JRounderPanel rounderPanel = new JRounderPanel(Constants.COLOR_BLUE_PANEL, 30, 30);
+//		JPChangeInfor panelButton = new JPChangeInfor(actionListener);
+//
+//		rounderPanel.add(panelButton.labelName(actionListener));
+//		panel2.setBorder(new EmptyBorder(200, 300, 250, 300));
+//		panel2.add(rounderPanel);
+//
+//	}
 
 //
 //	public String getCodeBook() {

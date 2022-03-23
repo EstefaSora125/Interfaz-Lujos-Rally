@@ -12,7 +12,7 @@ import javax.swing.border.EmptyBorder;
 public class JPRegisterUser extends JPanel {
 
 	private static final long serialVersionUID = 1L;
-	private JTextField userName, email, password, conPassword;
+	private JTextField userName, password, conPassword;
 
 	public JPRegisterUser(ActionListener listener) {
 		setOpaque(false);
@@ -26,7 +26,6 @@ public class JPRegisterUser extends JPanel {
 		add(labelPanel());
 		add(labelText());
 		add(addUserName());
-		add(addEmail());
 		add(addPassword());
 		add(addConfPassword());
 		add(addButton(listener));
@@ -72,22 +71,6 @@ public class JPRegisterUser extends JPanel {
 		return panel;
 	}
 
-	public JPanel addEmail() {
-		JPanel panel = new JPanel();
-		panel.setOpaque(false);
-
-		JLWindow emailText = new JLWindow(Constants.TEXT_USER_EMAIL, Constants.FONT_NUNITO, Color.BLACK,
-				Constants.COLOR_BLUE_PANEL2);
-		emailText.setBorder(new EmptyBorder(0, 0, 0, 230));
-
-		email = new JTextField(20);
-		email.setFont(Constants.FONT_NUNITO_TEXT);
-		email.setBackground(Color.white);
-
-		panel.add(emailText);
-		panel.add(email);
-		return panel;
-	}
 
 	public JPanel addPassword() {
 		JPanel panel = new JPanel();
@@ -145,9 +128,6 @@ public class JPRegisterUser extends JPanel {
 		return userName.getText();
 	}
 
-	public String getEmail() {
-		return email.getText();
-	}
 
 	public String getPassword() {
 		return password.getText();
